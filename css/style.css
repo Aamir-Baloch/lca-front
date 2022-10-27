@@ -242,18 +242,52 @@ p {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
-a.theme-simple-btn,button.theme-simple-btn{
+a.theme-simple-btn,button.theme-simple-btn,.green-btn,.red-btn{
     background: #EAB600;
     border-radius: 30px;
-    padding: 15px 40px;
+    padding: 8px 40px;
     color: #000;
     border: 2px solid transparent;
     font-weight: 500;
+    font-size: 20px;
+}
+.green-btn{
+    background: #379E02;
+    color: #fff;
+    border-radius: 26px;
+    padding: 8px 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 2px solid transparent; 
+}
+.red-btn{
+    background: #FF0F0F;
+    color: #fff;
+    border-radius: 26px;
+    padding: 8px 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 2px solid transparent; 
 }
 a.theme-simple-btn:hover,button.theme-simple-btn:hover{
     background: #000;
     color: #EAB600;
     border-color: #EAB600;
+
+}
+.green-btn:hover{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #379E02; 
+}
+.red-btn:hover{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #FF0F0F; 
 }
 .theme--btn a{
     color: #fff;
@@ -577,6 +611,7 @@ h5.green-heading{
 #testimonials.owl-theme .owl-nav{
     display: flex;
     bottom: -20px;
+    display: none;
 }
 .testimonial-profile-{
     margin-top: 30px;
@@ -958,6 +993,18 @@ span.icons-log {
     .container-width {
         padding: 0px 100px;
     }
+    .common-cms-wraper {
+        padding: 190px 0 120px;
+    }
+    .our-plans-category {
+        padding: 80px 0;
+    }
+    .contact-form-wrap {
+        padding: 100px 0;
+    }
+    .our-plans-category .button-holder, .agri-plan.button-holder, .chemi-plan-btn.button-holder {
+        margin: 40px 0 50px;
+    }
     .main-banner {
         padding: 220px 0 120px;
     }
@@ -1078,6 +1125,18 @@ span.icons-log {
     }
 }
 @media (max-width: 1399px){
+    .our-plans-category .button-holder, .agri-plan.button-holder, .chemi-plan-btn.button-holder {
+        margin: 30px 0 40px;
+    }
+    .our-plans-category {
+        padding: 70px 0;
+    }
+    .contact-form-wrap {
+        padding: 70px 0;
+    }
+    .common-cms-wraper {
+        padding: 150px 0 90px;
+    }
     .container-width {
         padding: 0px 80px;
     }
@@ -1187,10 +1246,15 @@ span.icons-log {
     }
 }
 @media (max-width: 1199px){
+    .our-plans-category {
+        padding: 50px 0;
+    }
     .container-width {
         padding: 0px 50px;
     }
-   
+    .common-cms-wraper {
+        padding: 130px 0 60px;
+    }
     .header-list .nav-link {
         font-size: 14px;
         margin: 0 18px 0 0;
@@ -1207,8 +1271,8 @@ span.icons-log {
         font-size: 16px;
     }
     h1 {
-        font-size: 70px;
-        line-height: 90px;
+        font-size: 50px;
+        line-height: 60px;
     }
     h2 {
         font-size: 32px;
@@ -1226,9 +1290,11 @@ span.icons-log {
         line-height: 23px;
     }
     .theme--btn{
-        height: 50px;
-        font-size: 15px;
+        height: 40px;
+        font-size: 14px;
+        width: 134px;
     }
+    
     .common-top-padding {
         padding-top: 60px;
     }
@@ -1272,14 +1338,35 @@ span.icons-log {
         margin-bottom: 30px;
     }
     .image-box{
-        margin-right: 0;
-        margin-bottom: 10px;
+        height: 70px;
     }
     .image-box img {
         height: 100%;
     }
 }
 @media (max-width: 991px) {
+    .contact-form-wrap {
+        padding: 50px 0;
+    }
+    .our-plans-category .button-holder, .agri-plan.button-holder, .chemi-plan-btn.button-holder {
+        margin: 20px 0 30px;
+    }
+    ul.aim-list{
+        padding-bottom: 10px;
+    }
+    ul.aim-list li{
+        text-align: center;
+    }
+    .our-plans-category {
+        padding: 50px 0;
+    }
+    .footer-links .contact-info li{
+        padding: 0;
+    }
+    .image-box {
+        margin-right: 10px;
+        height: 60px;
+    }
     .container-width {
         padding: 0px 35px;
     }
@@ -1555,7 +1642,7 @@ span.icons-log {
         right: -16px;
     }
     .nav-button.owl-prev,.nav-button.owl-next {
-        line-height: 24px;
+        line-height: 29px;
     }
     #testimonials.owl-theme .owl-nav button.owl-prev,#testimonials.owl-theme .owl-nav button.owl-next ,.nav-button.owl-next,button.owl-prev {
         height: 30px;
@@ -1587,6 +1674,9 @@ span.icons-log {
       .header-list .nav-link::before, .header-list .nav-link.main-header-active::before{
         bottom:  6px;
       }
+      .block-component blockquote.EN:after {
+        bottom: -35px;
+    }
 }
 @media (max-width: 375px){
     .logo {

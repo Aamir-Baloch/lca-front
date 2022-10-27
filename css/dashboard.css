@@ -172,7 +172,7 @@ label.lable-1 {
     line-height: 22px;
     color: #fff;
     font-weight: 500;
-    padding: 20px;
+    padding: 15px;
     border: 0px;
     white-space: nowrap;
     text-transform: capitalize;
@@ -182,7 +182,7 @@ label.lable-1 {
     line-height: 22px;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
-    padding: 20px;
+    padding: 15px;
     white-space: nowrap;
     text-transform: capitalize;
     border-bottom: 1px solid   rgba(255, 255, 255, 0.5);
@@ -190,4 +190,41 @@ label.lable-1 {
 }
 .widtharal-details{
     margin-top: 50px;
+}
+/* chat sidebar */
+.chat-sidebar {
+    background-color: #fff;
+    max-width: 100%;
+    width: 360px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index:9;
+}
+.multi-chat-btn-list {
+    padding: 20px 50px;
+}
+ul.friends-list {
+    overflow-y: auto;
+    height: calc(100vh - 260px);
+}
+ul.friends-list li {
+    border-bottom: 1px solid #eaeef7;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+ul.friends-list li:hover {
+    background-color: #f6f7fa;
+}
+ul.friends-list li h6 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d515c;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+ul.friends-list li p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #969eb4;
 }
