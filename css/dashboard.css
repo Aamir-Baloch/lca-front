@@ -64,7 +64,7 @@ li.list-item.active a {
 .dashboard-list li.list-item.active {
     cursor: pointer;
     background: #FFCD1E;
-    border-radius: 0px 7px 8px 0px;
+    border-radius:0;
 }
 .dashboard-list .list-item:hover .hov-icon,
 .dashboard-list li.list-item.active .hov-icon {
@@ -192,7 +192,10 @@ label.lable-1 {
 .widtharal-details{
     margin-top: 50px;
 }
-/* chat sidebar */
+/* chat page css */
+.content.chat-content{
+    height: 100vh;
+} 
 section.chat-card {
     position: relative;
     width: 100%;
@@ -253,10 +256,10 @@ p.noticed-time {
 }
 .typinfg-area {
     padding: 30px 20px;
-    position: relative;
+    position: sticky;
     background: #282928;
-    position: absolute;
-    bottom: -113px;
+    /* position: absolute;
+    bottom: -113px; */
     width: 100%;
 }
 .typinfg-area input.form-control {
@@ -283,7 +286,6 @@ button.btn.mike-btn {
     align-items: center;
     justify-content: center;
 }
-
 button.link-btn.btn {
     width: 41px;
     height: 41px;
@@ -294,6 +296,218 @@ button.link-btn.btn {
     justify-content: center;
     align-items: center;
 }
+.icon__menu__close {
+    display: none;
+    position: fixed;
+    transition: all ease-in-out 0.3s;
+}
+.toggler-bars {
+    position: fixed;
+    width: fit-content;
+    top: 84px;
+    left: 0;
+    color: #000;
+    background-color: #FFCD1E;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 35px;
+    z-index: 9;
+    line-height: 35px !important;
+	transition: all ease-in-out 0.3s;
+}
+.close-icon {
+	font-size: 19px;
+	position: absolute;
+	right: -275px;
+	color: #000;
+	top: 85px;
+	background: #FFCD1E;
+	padding: 7px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all ease-in-out 0.3s;
+}
+button.icon__menu__open {
+    display: none;
+}
+@media (max-width: 1600px) {
+    .red-btn,.green-btn {
+        padding: 4px 14px;
+        font-size: 14px;
+    }
+    a.theme-simple-btn, button.theme-simple-btn, .green-btn, .red-btn {
+        padding: 8px 24px;
+        font-size: 16px;
+    }
+    .table thead tr th,.table tbody tr td{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px;
+    }
+}
+@media (max-width: 1499px) {
+    .user-dashboard-side-wraper .content {
+        padding: 130px 60px 60px 300px;
+    }
+    .dashboard-list .list-item {
+        margin: 0 0px 8px 0;
+    }
+    .dashboard-list .list-item a{
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    .dashborad-sidebar {
+        width: 258px;
+        height: calc(100vh - 84px);
+    }
+    .common-chat-text {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 10px 10px;
+    }
+    section.chat-card .dash-common-card{
+        padding: 20px;
+    }
+    .dashboard-custom-container {
+        padding: 0px 30px;
+    }
+    section.chat-card .dash-common-card {
+        padding: 20px;
+        height: calc(100vh - 276px)
+    }
+    .typinfg-area {
+        padding: 15px 20px;
+    }
+   
+}
+@media (max-width: 1199px) {
+    .typinfg-area {
+        padding: 12px 10px;
+    }
+    section.chat-card .dash-common-card {
+        height: calc(100vh - 265px);
+    }
+    label.lable-1 {
+        font-size: 14px;
+        width: 35%;
+    }
+    .fileupload{
+        height: 200px;
+    }
+}
+@media (max-width: 991px) {
+    .dashborad-sidebar {
+        transition: all ease-in-out 0.3s;
+        transform: translateX(-275px);
+        z-index: 9;
+    }
+    button.icon__menu__open {
+        display: block;
+    }
+    .user-dashboard-side-wraper .content {
+        padding: 130px 20px 20px 20px;
+      }
+      .dashborad-sidebar {
+        width: 238px;
+      }
+      .user-dashboard-side-wraper p,
+      .user-dashboard-side-wraper h1,
+      .user-dashboard-side-wraper h2,
+      .user-dashboard-side-wraper h3,
+      .user-dashboard-side-wraper h4,
+      .user-dashboard-side-wraper h5,
+      .user-dashboard-side-wraper h6
+      {
+         text-align: left;
+      }
+      header.dashborad-header .header-buttons {
+        margin-right: 0;
+      }
+      .receving-detail,.sending-detial {
+        max-width: 80%;
+    }
+    
+}
+@media (max-width: 767px) {
+    button.btn.mike-btn {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    button.link-btn.btn {
+        width: 35px;
+        height: 36px;
+    }
+    span.link-assets {
+        margin-left: 10px;
+    }
+    .typinfg-area input.form-control{
+        height: 40px;
+    }
+    .table thead tr th, .table tbody tr td {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 6px;
+    }
+    a.theme-simple-btn, button.theme-simple-btn, .green-btn, .red-btn {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+    .field-gap {
+        margin-bottom: 0;
+    }
+    .personal-info label.lable-1{
+        margin-bottom: 20px;
+    }
+    .fileupload {
+        height: 200px;
+        width: 60%;
+        margin: 10px auto;
+    }
+    .profile-picture {
+        padding: 0;
+        margin: 10px auto;
+    }
+    .personal-info .form-wraper .form-control,.personal-info label.lable-1{
+        width: 100%;
+    }
+    .personal-info label.lable-1{
+        margin-bottom: 0;
+    }
+    .personal-info .form-wraper .form-control{
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px) {
+    .toggler-bars,.close-icon{
+        top: 72px;
+    }
+    .dashborad-sidebar {
+        height: calc(100vh - 73px);
+    }
+    .receving-detail,.sending-detial {
+        max-width: 100%;
+    }
+    .fileupload{
+        height: 150px;
+    }
+    .dashboard-custom-container {
+        padding: 0px 20px;
+    }
+}
+
+
 
 
 
