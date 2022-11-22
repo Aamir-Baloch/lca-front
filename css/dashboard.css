@@ -5,7 +5,8 @@ header.dashborad-header{
 }
 /* sidebar */
 .user-dashboard-side-wraper .content {
-    padding: 130px 60px 100px 340px;
+    /* padding: 130px 60px 100px 340px; */
+    padding: 130px 60px 100px 60px;
 }
 .dashborad-sidebar {
     max-width: 100%;
@@ -357,7 +358,8 @@ button.icon__menu__open {
 }
 @media (max-width: 1499px) {
     .user-dashboard-side-wraper .content {
-        padding: 130px 60px 60px 300px;
+        /* padding: 130px 60px 60px 300px; */
+        padding: 130px 60px 60px 60px;
     }
     .dashboard-list .list-item {
         margin: 0 0px 8px 0;
