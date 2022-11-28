@@ -205,7 +205,7 @@ p {
 /* header */
 .header {
     z-index: 1;
-    background: #ffff;
+    background: #fff;
 }
 .top-header {
     background: #244562 0% 0% no-repeat padding-box;
@@ -721,6 +721,7 @@ ul.news-list li{
     display: block;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    display: none;
 }
 .image-galary {
     width: 100%;
@@ -1296,7 +1297,219 @@ section.video-libaray {
     width: 1566px;
     padding-bottom: 140px;
 }
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+.main-banner-slider .owl-theme .owl-nav button.owl-prev {
+    left: -11px;
+}
+.main-banner-slider .owl-theme .owl-nav button.owl-next {
+    right: -7px;
+}
+@media (max-width: 1700px) {
+    .container-width {
+        padding: 0px 60px;
+    }
+    .header-list .nav-link{
+        font-size: 14px;
+        margin: 0 8px 0 0;
+    }
+}
+@media (max-width: 1600px) {
+    h1 {
+        font-size: 52px;
+        line-height: 65px;
+    }
+    h2 {
+        font-size: 38px;
+        line-height: 47px;
+    }
+    h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    h4 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    h5 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    h6 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .container-width {
+        padding: 0px 50px;
+    }
+    .header-list .nav-link{
+        font-size: 14px;
+        margin: 0 8px 0 0;
+    }
+    .main-banner-slider p {
+        padding-top: 10px;
+    }
+    .buton-holder {
+        margin-top: 30px;
+    }
+    .baner-logo {
+        width: 100px;
+    }
+    .logo {
+        width: 130px;
+    }
+    span.next00 {
+        width: 7px;
+        height: 7px;
+        margin-left: 10px;
+    }
+    ul.drop-down__menu {
+        padding: 8px !important;
+    }
+    .drop-down__menu li {
+        padding: 7px 0;
+        font-size: 14px;
+    }
+    .drop-down__menu li a {
+        font-size: 14px;
+    }
+    li.menu-item-has-children::after {
+        bottom: -7px;
+    }
+    .slider-item-1,.slider-item-2,.slider-item-3,.slider-item-4 {
+        background-size: cover;
+        padding: 80px 0;
+    }
+    .main-banner-slider .owl-theme .owl-nav button.owl-prev,.main-banner-slider .owl-theme .owl-nav button.owl-next{
+        top: 36%;
+    }
+    .common-top-padding {
+        padding-top: 70px;
+    }
+    .common-bottom-padding {
+        padding-bottom: 70px;
+    }
+    .our-aim-content ul.aim-list li {
+        margin-bottom: 7px;
+        font-size: 15px;
+    }
+    ul.news-list li {
+        padding: 7px 0;
+        font-size: 15px;
+    }
+    .next-mark-img img {
+        height: 10px;
+    }
+    .para-1 {
+        margin: 15px 0 10px;
+    }
+    .read-more-link a{
+        font-size: 15px;
+    }
+    .serving-humanity{
+        margin: 50px 0;
+        padding: 50px 0;
+    }
+    .co-founder-message {
+        padding: 50px;
+    }
+    .library-tabs .nav-pills li.nav-item .nav-link {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .image-galary img {
+        height: 260px;
+    }
+    .testimonial-slider {
+        margin-top: 70px;
+    }
+    .cantact-map {
+        padding: 40px 0 295px;
+    }
+}
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h4 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    h5 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .container-width {
+        padding: 0px 30px;
+    }
+    .logo {
+        width: 100px;
+    }
+    .header-list .nav-link {
+        font-size: 11px;
+        margin: 0 4px 0 0;
+    }
+    .orange.theme-button,.white.theme-button{
+        font-size: 14px;
+    }
+    .common-bottom-padding,.common-top-padding {
+        padding-bottom: 42px;
+    }
+    .serve-slider-item h6 {
+        padding: 16px 0 14px;
+    }
+    .serving-humanity {
+        margin: 0;
+        padding: 50px 0;
+        background-size: cover;
+    }
+    .serving-humanity-slider .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 14px;
+    }
+    .footer-links li a {
+        font-size: 13px;
+    }
+    .footer-links li {
+        margin-bottom: 22px;
+        font-size: 14px;
+    }
+    .footer-links h5 {
+        margin-bottom: 25px;
+    }
+    .form-floating>label{
+        font-size: 14px;
+    }
+    .image-galary img {
+        height: 200px;
+    }
+    .header-list .nav-link::before, .header-list .nav-link.main-header-active::before {
+     bottom: 2px;
+     
+    }
 
+}
 
 @media (max-width: 991px) {
     .d-absolute-top-img img {
@@ -1343,9 +1556,6 @@ section.video-libaray {
     .m-red-box {
         margin-top: 150px;
     }
-    .main-banner {
-        padding: 108px 0 271px;
-    }
     .top-header {
         height: 16px;
     }
@@ -1353,11 +1563,11 @@ section.video-libaray {
         padding: 0px 35px;
     }
     .navbar-light .navbar-toggler-icon {
-        background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path stroke="rgba(204, 5, 6)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+        background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path stroke="rgba(237, 138, 57)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
     }
     .bottom-header .navbar-toggler {
         position: absolute;
-        right: 216px;
+        right: 0;
     }
     .navbar-toggler:focus {
         box-shadow: unset !important;
@@ -1457,5 +1667,132 @@ section.video-libaray {
    
     .search-wrapper {
         right: 90px;
+    }
+    .our-aim-content {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .aim-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .para-1{
+        text-align: center;
+    }
+    .common-bottom-padding, .common-top-padding {
+        padding-bottom: 20px;
+    }
+    .buton-holder {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .common-top-padding {
+        padding-top: 20px;
+    }
+    .image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .visiter-states {
+        margin-top: 20px;
+    }
+    .bottom-header .navbar-nav {
+        width: 100%;
+        padding: 0;
+    }
+    .header-list .nav-link:hover, .header-list .nav-link.main-header-active {
+        color: #000 !important;
+        text-align: start;
+    }
+    .main-banner-slider p {
+        padding: 10px 38px;
+    }
+    .slider-item-1,.slider-item-2,.slider-item-3 {
+        padding: 41px 0;
+    }
+    .noor-libray-content {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .footer-info p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .store-logos {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .store-logos a{
+        text-align: center;
+    }
+    .top-footer.common-card {
+        padding: 20px;
+        margin-top: -376px;
+    }
+    .footer-info {
+        padding-right: 0;
+    }
+    h2 {
+        font-size: 21px;
+        line-height: 26px;
+    }
+
+    .library-tabs .nav-pills li.nav-item {
+        border-top: none;
+    }
+    .para-3 {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    ul#pills-tab {
+        display: flex;
+        justify-content: center;
+    }
+    .percentage-donation,.latest-news{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .co-founder-message {
+        padding: 15px;
+    }
+    h2.founder-msg-heading {
+        font-size: 20px;
+    }
+    p
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+        text-align: center;
+    }
+    .serve-slider-item,.testimonial-slider-item{
+        padding: 15px;
+    }
+    .container-width {
+        padding: 0px 10px;
+    }
+    .field-wrapper .form-control {
+        height: 48px;
     }
 }
